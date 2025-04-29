@@ -16,6 +16,18 @@ class LLMProviderType(Enum):
     def __str__(self) -> str:
         return self.value 
 
+
+class ThinkingLevel(Enum):
+    """思考级别枚举"""
+    SIMPLE = "简单"
+    BASIC = "基础"
+    ADVANCED = "高级"
+    DEEP = "深度思考"
+    
+    def __str__(self) -> str:
+        return self.value
+
+
 class LLMProvider(ABC):
     """LLM提供商的抽象基类，定义所有LLM提供商必须实现的接口"""
     
@@ -29,7 +41,10 @@ class DeepSeekProvider(LLMProvider):
     
     def get_llm(self, **kwargs) -> Any:
         from langchain_deepseek import ChatDeepSeek
+        print("=="*200)
         print(DEEPSEEK_API_KEY)
+        print(DEEPSEEK_API_BASE)
+        print(DEEPSEEK_MODEL)
         # 默认配置
         config = {
             "api_key": DEEPSEEK_API_KEY,
@@ -58,20 +73,29 @@ class QianWenProvider(LLMProvider):
     
     def get_llm(self, **kwargs) -> Any:
         """
-        通义千问（Qwen）LLM实现，基于 langchain_community.llms.Tongyi
-        支持参数：dashscope_api_key, model, temperature, max_tokens 等
+        通义千问（Qwen）LLM实现，基于 langchain_openai.ChatOpenAI
+        支持参数：api_key, model, temperature, max_tokens 等
         """
-        from langchain_community.llms import Tongyi
-        # 优先使用传入的 dashscope_api_key，否则用配置文件中的
-        api_key = kwargs.pop("dashscope_api_key", None) or DASHSCOPE_API_KEY
+        from langchain_openai import ChatOpenAI
+        # 优先使用传入的 api_key，否则用配置文件中的
+        api_key = kwargs.pop("api_key", None) or DASHSCOPE_API_KEY
         if api_key:
             os.environ["DASHSCOPE_API_KEY"] = api_key
-        # 支持 model、temperature、max_tokens 等参数
+        print(api_key)
+        # 配置基本参数
         model = kwargs.pop("model", QWEN_MODEL)
         temperature = kwargs.pop("temperature", 0)
         max_tokens = kwargs.pop("max_tokens", None)
-        # 其他参数可继续扩展
-        return Tongyi(model_name=model, temperature=temperature, max_tokens=max_tokens, **kwargs)
+        
+        # 创建 ChatOpenAI 实例
+        return ChatOpenAI(
+            api_key=api_key,
+            base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+            model=model,
+            temperature=temperature,
+            max_tokens=max_tokens,
+            **kwargs
+        )
 
 
 class LLMFactory:
@@ -115,3 +139,58 @@ class LLMFactory:
     def get_available_providers(cls) -> list:
         """获取所有可用的LLM提供商列表"""
         return list(cls._providers.keys()) 
+    
+
+# 简单、基础、高级、深度思考
+def get_llm_by_type(thinking_level: ThinkingLevel = ThinkingLevel.BASIC, **kwargs) -> Any:
+    """
+    根据思考级别创建LLM实例，不同思考级别使用不同的LLM提供商
+    
+    Args:
+        thinking_level: 思考级别枚举
+        **kwargs: 其他可选参数
+        
+    Returns:
+        配置好的LLM实例
+    """
+    match thinking_level:
+        case ThinkingLevel.SIMPLE:
+            config = {
+                "temperature": 0.3,
+                "max_tokens": 512
+            }
+            config.update(kwargs)
+            return LLMFactory.create_llm(LLMProviderType.QIANWEN, **config)
+            
+        case ThinkingLevel.BASIC:
+            config = {
+                "temperature": 0.2,
+                "max_tokens": 1024
+            }
+            config.update(kwargs)
+            return LLMFactory.create_llm(LLMProviderType.DEEPSEEK, **config)
+            
+        case ThinkingLevel.ADVANCED:
+            config = {
+                "temperature": 0.1,
+                "max_tokens": 2048
+            }
+            config.update(kwargs)
+            return LLMFactory.create_llm(LLMProviderType.OPENAI, **config)
+            
+        case ThinkingLevel.DEEP:
+            config = {
+                "temperature": 0,
+                "max_tokens": 4096
+            }
+            config.update(kwargs)
+            return LLMFactory.create_llm(LLMProviderType.DEEPSEEK, **config)
+            
+        case _:
+            # 默认使用基础配置和DeepSeek提供商
+            config = {
+                "temperature": 0.2,
+                "max_tokens": 1024
+            }
+            config.update(kwargs)
+            return LLMFactory.create_llm(LLMProviderType.DEEPSEEK, **config) 

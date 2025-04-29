@@ -5,17 +5,19 @@ from typing import Optional, ClassVar, Type
 from langchain.tools import BaseTool
 from browser_use import AgentHistoryList, Browser, BrowserConfig
 from browser_use import Agent as BrowserAgent
-from src.agents.llm import vl_llm
-from src.tools.decorators import create_logged_tool
-from src.config import CHROME_INSTANCE_PATH
+from app.multi_agents.utils import LLMFactory, LLMProviderType
+from app.utils.log_util import create_logged_tool
+from app.config.config_com import CHROME_INSTANCE_PATH
 
 expected_browser = None
+# 如果指定了Chrome实例则使用， 可以指定为本地的chrome浏览器， 也可以指定为远程的浏览器
+# if CHROME_INSTANCE_PATH:
+#    expected_browser = Browser(
+#        config=BrowserConfig(chrome_instance_path=CHROME_INSTANCE_PATH)
+ #   )
 
-# 如果指定了Chrome实例则使用
-if CHROME_INSTANCE_PATH:
-    expected_browser = Browser(
-        config=BrowserConfig(chrome_instance_path=CHROME_INSTANCE_PATH)
-    )
+vl_llm = LLMFactory.create_llm(LLMProviderType.QIANWEN,    temperature=0)
+
 
 
 class BrowserUseInput(BaseModel):
@@ -73,3 +75,6 @@ class BrowserTool(BaseTool):
 
 BrowserTool = create_logged_tool(BrowserTool)
 browser_tool = BrowserTool()
+
+if __name__ == "__main__":
+    browser_tool.run("Go to google.com and search for browser-use")

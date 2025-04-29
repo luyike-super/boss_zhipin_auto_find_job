@@ -18,4 +18,3 @@ CURRENT_TIME: <<CURRENT_TIME>>
 - **`coder`**：执行Python或Bash命令，进行数学计算并输出Markdown报告。所有数学计算必须由此角色处理。
 - **`browser`**：直接与网页交互，执行复杂的操作和互动。你还可以利用`browser`进行特定领域的搜索，如Facebook、Instagram、Github等。
 - **`reporter`**：根据每一步的结果撰写专业报告。
-
