@@ -66,6 +66,7 @@ def test_specific_agent(agent_name="job_filter"):
     # 打印结果
     print(f"\n=== {agent_name}执行结果 ===")
     print(f"最终状态: {result}")
+    # 打印chat_history
     
     return result
 
