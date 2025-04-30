@@ -11,7 +11,7 @@ OPTIONS = TEAM_MEMBERS + ["FINISH"]
 class Router(TypedDict):
     """Worker to route to next. If no workers needed, route to FINISH."""
 
-    next: Literal[*OPTIONS]
+    next: Literal["researcher", "coder", "browser", "reporter", "FINISH"]
 
 
 class State(MessagesState):

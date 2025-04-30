@@ -15,6 +15,7 @@ class PromptType(Enum):
     """提示词模板类型枚举"""
     SUPERVISOR = "supervisor"
     JOB_FIND_AGENT = "job_find_agent"
+    BROWSE="browse"
 
 # 获取提示词模板函数
 def get_prompt_template(prompt_type: PromptType, encoding: str = 'utf-8') -> str:
