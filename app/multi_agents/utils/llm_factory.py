@@ -81,7 +81,6 @@ class QianWenProvider(LLMProvider):
         api_key = kwargs.pop("api_key", None) or DASHSCOPE_API_KEY
         if api_key:
             os.environ["DASHSCOPE_API_KEY"] = api_key
-        print(api_key)
         # 配置基本参数
         model = kwargs.pop("model", QWEN_MODEL)
         temperature = kwargs.pop("temperature", 0)
@@ -156,7 +155,7 @@ def get_llm_by_type(thinking_level: ThinkingLevel = ThinkingLevel.BASIC, **kwarg
     match thinking_level:
         case ThinkingLevel.SIMPLE:
             config = {
-                "temperature": 0.3,
+                "temperature": 0,
                 "max_tokens": 512
             }
             config.update(kwargs)

@@ -16,6 +16,7 @@ class PromptType(Enum):
     SUPERVISOR = "supervisor"
     JOB_FIND_AGENT = "job_find_agent"
     BROWSE="browse"
+    COORDINATOR="coordinator"
 
 # 获取提示词模板函数
 def get_prompt_template(prompt_type: PromptType, encoding: str = 'utf-8') -> str:
@@ -86,6 +87,7 @@ def apply_prompt_template(
         # 验证消息格式
         if not isinstance(state["messages"], list):
             raise ValueError("state['messages'] 必须是列表类型")
+        print(state["messages"])
             
         return [{"role": "system", "content": system_prompt}] + state["messages"]
         

@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from app.multi_agents.graph.node_graph import build_agent
 from app.multi_agents.graph.state_langgraph import State
 from langgraph.checkpoint.memory import InMemorySaver
-
+from langchain_core.messages import HumanMessage
 
 def test_basic_flow():
     """测试基本工作流程，从前台智能体开始，执行完整流程"""
@@ -21,11 +21,7 @@ def test_basic_flow():
     
     # 创建初始状态
     initial_state = State(
-        user_input="我想找一份Python开发工作",
-        chat_history=[],
-        current_step="开始流程",
-        agent_outputs={},
-        command=None
+        messages=[HumanMessage(content="我想找一份Python开发工作")]
     )
     
     # 运行图，传入初始状态
@@ -48,13 +44,10 @@ def test_specific_agent(agent_name="job_filter"):
     # 构建图
     graph = build_agent(checkpointer=checkpointer)
     
+    query ="查询蔡徐坤的最新消息"
     # 创建初始状态，将command设置为特定智能体
     initial_state = State(
-        user_input=f"测试{agent_name}智能体",
-        chat_history=[],
-        current_step=f"测试{agent_name}",
-        agent_outputs={},
-        command=None
+        messages=[HumanMessage(content=query)]
     )
     
     # 调用图的特定节点

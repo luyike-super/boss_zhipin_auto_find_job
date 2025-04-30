@@ -3,9 +3,16 @@ from langgraph.graph import END
 from .state_langgraph import State
 from typing import Literal
 from langgraph.graph import StateGraph
+from app.multi_agents.utils import get_llm_by_type, ThinkingLevel, get_logger
+from app.multi_agents.prompts.template import PromptType, apply_prompt_template
+from langchain_core.messages import HumanMessage, SystemMessage
 
 
-def frontdesk_agent(state: State) -> Command[Literal["planner"]]:
+# 获取日志记录器
+logger = get_logger(__name__, level="debug")
+
+
+def frontdesk_agent(state: State) -> Command[Literal["planner", "__end__"]]:
     """
     前台智能体: 系统的入口点
     
@@ -15,14 +22,21 @@ def frontdesk_agent(state: State) -> Command[Literal["planner"]]:
     
     流转: 前台智能体 -> 规划智能体 or __end__
     """
+    llm = get_llm_by_type(ThinkingLevel.SIMPLE)
+    logger.debug("前台智能体开始工作", agent_name="frontdesk")
+    # 使用apply_prompt_template函数生成完整的消息列表
+    formatted_messages = apply_prompt_template(PromptType.COORDINATOR, state)
 
+    # 调用LLM
+    result = llm.invoke(formatted_messages)
+    if "handoff_to_planner()" in result.content:
+        goto = "planner"
+        logger.agent_transition("frontdesk", "planner", "满足跳转条件，包含handoff_to_planner()")
+    else:
+        goto = "__end__"
+        logger.agent_transition("frontdesk", "__end__", "不满足跳转条件")
 
-
-    
-    # 判断用户输入是否属于系统业务范围
-    # 如果属于，转到规划智能体；否则结束
-    # 这里简化为直接转到规划智能体
-    return Command(goto="planner")
+    return Command(goto=goto)
 
 def planner_agent(state: State) -> Command[Literal["supervisor", "__end__"]]:
     """
@@ -36,6 +50,7 @@ def planner_agent(state: State) -> Command[Literal["supervisor", "__end__"]]:
     """
     # 判断是否需要监督智能体
     # 这里简化为直接转到监督智能体
+    logger.agent_transition("planner", "supervisor", "规划完成，转到监督智能体")
     return Command(goto="supervisor")
 
 def supervisor_agent(state: State) -> Command[Literal["executor", "__end__"]]:
@@ -50,6 +65,7 @@ def supervisor_agent(state: State) -> Command[Literal["executor", "__end__"]]:
     """
     # 判断是否需要执行智能体
     # 这里简化为直接转到执行智能体
+    logger.agent_transition("supervisor", "executor", "监督任务设置完成，转到执行智能体")
     return Command(goto="executor")
 
 def executor_agent(state: State) -> Command[Literal["__end__"]]:
@@ -63,6 +79,7 @@ def executor_agent(state: State) -> Command[Literal["__end__"]]:
     流转: 执行智能体 -> __end__
     """
     # 执行任务并结束
+    logger.agent_transition("executor", "__end__", "任务执行完成，工作流结束")
     return Command(goto=END)
 
 def job_find_agent(state: State) -> Command[Literal["__end__"]]:
@@ -76,6 +93,7 @@ def job_find_agent(state: State) -> Command[Literal["__end__"]]:
     流转: 岗位筛选智能体 -> __end__
     """
     # 使用goto参数直接指定下一个节点为__end__
+    logger.agent_transition("job_find", "__end__", "岗位查找完成")
     return Command(goto="__end__")
 
 def message_processor_agent(state: State) -> Command[Literal["__end__"]]:
@@ -89,6 +107,7 @@ def message_processor_agent(state: State) -> Command[Literal["__end__"]]:
     流转: 消息处理智能体 -> __end__
     """
     # 使用goto参数直接指定下一个节点为__end__
+    logger.agent_transition("message_processor", "__end__", "消息处理完成")
     return Command(goto="__end__")
 
 def resume_agent(state: State) -> Command[Literal["__end__"]]:
@@ -101,6 +120,7 @@ def resume_agent(state: State) -> Command[Literal["__end__"]]:
     
     流转: 简历智能体 -> __end__
     """
+    logger.agent_transition("resume", "__end__", "简历处理完成")
     return Command(goto="__end__")
 
 def data_collector_agent(state: State) -> Command[Literal["__end__"]]:
@@ -113,6 +133,7 @@ def data_collector_agent(state: State) -> Command[Literal["__end__"]]:
     
     流转: 数据收集智能体 -> __end__
     """
+    logger.agent_transition("data_collector", "__end__", "数据收集完成")
     return Command(goto="__end__")
 
 def user_interaction_agent(state: State) -> Command[Literal["__end__"]]:
@@ -125,6 +146,7 @@ def user_interaction_agent(state: State) -> Command[Literal["__end__"]]:
     
     流转: 用户交互智能体 -> __end__
     """
+    logger.agent_transition("user_interaction", "__end__", "用户交互完成")
     return Command(goto="__end__")
 
 def result_synthesizer_agent(state: State) -> Command[Literal["__end__"]]:
@@ -137,6 +159,7 @@ def result_synthesizer_agent(state: State) -> Command[Literal["__end__"]]:
     
     流转: 结果整合智能体 -> __end__
     """
+    logger.agent_transition("result_synthesizer", "__end__", "结果整合完成")
     return Command(goto="__end__")
 
 def build_agent(checkpointer=None) -> StateGraph:
@@ -163,6 +186,8 @@ def build_agent(checkpointer=None) -> StateGraph:
     workflow.add_edge("planner", "supervisor")
     workflow.add_edge("supervisor", "executor")
     workflow.add_edge("executor", END)
+    
+    logger.info("智能体图构建完成", agent_name="system")
     
     # 编译并返回
     return workflow.compile(checkpointer=checkpointer)
