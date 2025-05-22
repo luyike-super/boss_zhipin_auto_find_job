@@ -83,7 +83,7 @@ class QianWenProvider(LLMProvider):
             os.environ["DASHSCOPE_API_KEY"] = api_key
         # 配置基本参数
         model = kwargs.pop("model", QWEN_MODEL)
-        temperature = kwargs.pop("temperature", 0)
+        temperature = kwargs.pop("temperature", 0.2)
         max_tokens = kwargs.pop("max_tokens", None)
         
         # 创建 ChatOpenAI 实例
@@ -171,11 +171,11 @@ def get_llm_by_type(thinking_level: ThinkingLevel = ThinkingLevel.BASIC, **kwarg
             
         case ThinkingLevel.ADVANCED:
             config = {
-                "temperature": 0.1,
+                "temperature": 0,
                 "max_tokens": 2048
             }
             config.update(kwargs)
-            return LLMFactory.create_llm(LLMProviderType.OPENAI, **config)
+            return LLMFactory.create_llm(LLMProviderType.DEEPSEEK, **config)
             
         case ThinkingLevel.DEEP:
             config = {

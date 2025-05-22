@@ -1,2 +1,2 @@
 CHROME_INSTANCE_PATH = None
-TEAM_MEMBERS = ["researcher", "coder", "browser", "reporter"]
+TEAM_MEMBERS = [ "browser" , "reporter","job_find"]

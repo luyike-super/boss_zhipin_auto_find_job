@@ -9,6 +9,8 @@ from app.multi_agents.graph.state_langgraph import State
 from langgraph.checkpoint.memory import InMemorySaver
 from langchain_core.messages import HumanMessage
 
+from app.config.config_com import TEAM_MEMBERS
+
 def test_basic_flow():
     """测试基本工作流程，从前台智能体开始，执行完整流程"""
     print("开始测试基本工作流程...")
@@ -21,7 +23,8 @@ def test_basic_flow():
     
     # 创建初始状态
     initial_state = State(
-        messages=[HumanMessage(content="我想找一份Python开发工作")]
+        messages=[HumanMessage(content="帮我寻找AI Agnet 工作")],
+        TEAM_MEMBERS=TEAM_MEMBERS
     )
     
     # 运行图，传入初始状态

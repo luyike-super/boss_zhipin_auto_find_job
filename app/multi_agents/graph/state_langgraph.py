@@ -11,7 +11,7 @@ OPTIONS = TEAM_MEMBERS + ["FINISH"]
 class Router(TypedDict):
     """Worker to route to next. If no workers needed, route to FINISH."""
 
-    next: Literal["researcher", "coder", "browser", "reporter", "FINISH"]
+    next: Literal["researcher", "job_find", "coder", "browser", "reporter", "FINISH"]
 
 
 class State(MessagesState):
@@ -21,7 +21,7 @@ class State(MessagesState):
     TEAM_MEMBERS: list[str]
 
     # Runtime Variables
-    next: str
+    next: list[str]
     full_plan: str
     deep_thinking_mode: bool
     search_before_planning: bool

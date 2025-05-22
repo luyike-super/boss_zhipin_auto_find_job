@@ -14,9 +14,11 @@ from langgraph.prebuilt.chat_agent_executor import AgentState  # 用于管理代
 class PromptType(Enum):
     """提示词模板类型枚举"""
     SUPERVISOR = "supervisor"
-    JOB_FIND_AGENT = "job_find_agent"
+    JOB_FIND = "jobfind"
     BROWSE="browse"
     COORDINATOR="coordinator"
+    PLANNER="planner"
+    DB_QUERY="db_query"
 
 # 获取提示词模板函数
 def get_prompt_template(prompt_type: PromptType, encoding: str = 'utf-8') -> str:
@@ -76,7 +78,7 @@ def apply_prompt_template(
             **state,
             **(additional_vars or {})
         }
-        
+        print(template_vars)
         # 创建系统提示
         # 模板中某个没有的变量没有被成功填充，会报错，需要处理
         system_prompt = PromptTemplate(
@@ -97,3 +99,6 @@ def apply_prompt_template(
         raise ValueError(f"模板应用失败：{e}")
 
 
+if __name__ == "__main__":
+    print(get_prompt_template(PromptType.JOB_FIND))
+    print(apply_prompt_template(PromptType.JOB_FIND, {"messages": [{"role": "user", "content": "你好"}]} ,additional_vars={"origin_query": "22222222"   }))

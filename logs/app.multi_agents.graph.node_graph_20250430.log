@@ -4,3 +4,1270 @@
 2025-04-30 12:12:52,579 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
 2025-04-30 12:13:02,167 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
 2025-04-30 12:13:03,891 - app.multi_agents.graph.node_graph - INFO - Agent Transition: executor -> __end__ | 任务执行完成，工作流结束
+2025-04-30 12:22:34,099 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 12:22:37,580 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 12:22:41,326 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 12:26:44,681 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 12:26:46,792 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 12:26:48,279 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 12:26:50,339 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 12:26:52,608 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> __end__ | 不满足跳转条件
+2025-04-30 12:26:55,024 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 12:31:37,648 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 12:31:41,205 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 12:31:45,085 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 12:33:10,456 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 12:33:14,215 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 12:33:18,088 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 12:35:54,305 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 13:01:05,707 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 13:01:09,201 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 13:01:11,589 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 13:01:22,704 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 13:07:34,193 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 13:07:38,728 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 13:07:43,316 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 13:07:55,962 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 13:07:55,962 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据搜索结果与HR进行初步沟通。",
+      "note": "此步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 13:07:55,963 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 13:07:55,966 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 13:07:55,967 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 13:07:55,969 - app.multi_agents.graph.node_graph - INFO - Agent Transition: executor -> __end__ | 任务执行完成，工作流结束
+2025-04-30 13:08:31,167 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 13:08:35,876 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 13:08:36,193 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 13:08:38,123 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 13:08:40,942 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 13:08:46,865 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 13:08:49,710 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 13:08:49,711 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据搜索结果与HR进行初步沟通。",
+      "note": "此步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 13:08:49,711 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 13:08:49,714 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 13:08:49,715 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 13:08:49,717 - app.multi_agents.graph.node_graph - INFO - Agent Transition: executor -> __end__ | 任务执行完成，工作流结束
+2025-04-30 13:08:59,452 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 13:08:59,453 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据搜索结果与HR进行初步沟通。",
+      "note": "此步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 13:09:04,217 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 13:15:27,449 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 13:15:32,081 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 13:15:34,489 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 13:15:47,150 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 13:15:47,151 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent开发相关的职位，筛选合适的岗位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 13:15:54,469 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 13:16:28,660 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 13:16:43,421 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 13:18:26,975 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 13:18:31,564 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 13:18:35,187 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 13:18:53,832 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 13:18:53,833 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据用户需求筛选合适的岗位。",
+      "note": "确保岗位符合AI Agent开发的要求。"
+    },
+    {
+      "agent_name": "job_find",
+      "title": "与HR进行沟通",
+      "description": "通过job_find代理与筛选出的岗位HR进行初步沟通，了解职位详情、薪资范围和工作要求等信息。",
+      "note": "沟通内容需专业且符合用户求职意向。"
+    }
+  ]
+}
+2025-04-30 13:18:57,858 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 13:19:10,101 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 13:27:52,610 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 13:27:57,067 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 13:30:02,511 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 13:30:07,258 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 13:30:36,539 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 13:30:39,570 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 13:30:40,817 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 13:30:50,166 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 13:30:50,167 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent开发相关的职位，筛选合适的岗位并与HR进行初步沟通。",
+      "note": "此步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 13:31:44,730 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 13:32:00,299 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 13:32:08,190 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 13:32:21,837 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 14:34:20,614 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 14:34:21,094 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 14:34:22,329 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 14:34:31,758 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 14:34:31,758 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索AI Agent开发相关的工作岗位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 14:34:31,759 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 14:34:33,128 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 14:34:33,129 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 14:37:06,567 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 14:37:07,046 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 14:37:07,994 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 14:37:17,797 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 14:37:17,798 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据搜索结果与HR进行初步沟通。",
+      "note": "此步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 14:37:17,798 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 14:37:19,052 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 14:37:19,053 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 14:37:19,054 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: type object 'PromptType' has no attribute 'JOB_FIND'
+2025-04-30 14:38:55,905 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 14:38:56,387 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 14:38:58,747 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 14:39:08,408 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 14:39:08,408 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "在BOSS直聘上寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "搜索AI Agent开发岗位并与HR沟通",
+      "description": "在BOSS直聘平台上搜索AI Agent开发相关的工作岗位，筛选合适的职位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 14:39:08,409 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 14:39:09,574 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 14:39:09,574 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 14:39:09,576 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: "缺少必要的状态变量：'PLANNER'"
+2025-04-30 14:41:11,136 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 14:41:11,632 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 14:41:12,802 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 14:41:23,561 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 14:41:23,562 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "根据用户提供的岗位要求，在BOSS直聘上搜索AI Agent开发相关的工作岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 14:41:23,562 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 14:41:24,987 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 14:41:24,988 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 14:42:03,158 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 模板应用失败：'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 14:48:28,590 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 14:48:29,093 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 14:48:30,519 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 14:48:41,636 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 14:48:41,637 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据用户要求与HR进行沟通。",
+      "note": "此步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 14:48:41,637 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 14:48:42,872 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 14:48:42,873 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 14:49:11,916 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 模板应用失败：'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 14:50:39,064 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 14:50:39,597 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 14:50:40,721 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 14:50:50,075 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 14:50:50,075 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索AI Agent开发相关的工作岗位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 14:50:50,076 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 14:50:51,362 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 14:50:51,362 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 14:51:03,743 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 14:53:53,040 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 14:54:03,573 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 14:54:04,090 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 14:54:07,183 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 14:54:17,923 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 14:54:17,923 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发工作，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "根据用户要求，在BOSS直聘上搜索AI Agent开发相关岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 14:54:17,924 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 14:54:19,236 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 14:54:19,236 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:09:18,614 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:09:19,095 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:09:20,369 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:09:29,993 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:09:29,993 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发工作，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索AI Agent开发相关岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:09:29,994 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:09:31,331 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:09:31,331 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:09:47,725 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:11:43,768 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:11:44,280 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:11:45,428 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:11:56,663 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:11:56,663 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索与AI Agent开发相关的职位，并根据用户要求与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:11:56,664 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:11:57,969 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:11:57,970 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:12:03,847 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:16:27,085 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 15:16:55,329 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:16:56,775 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:16:59,186 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:17:10,924 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:17:10,925 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "在BOSS直聘寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "寻找AI Agent开发岗位",
+      "description": "在BOSS直聘上搜索AI Agent开发相关的工作岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:17:10,925 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:17:14,107 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:17:14,107 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:17:20,695 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:17:47,624 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 15:18:47,395 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:18:48,845 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:18:50,908 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:19:01,893 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:19:01,893 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "根据用户需求，在BOSS直聘平台上搜索与AI Agent开发相关的职位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:19:01,894 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:19:05,607 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:19:05,608 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:19:09,649 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:19:37,607 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 15:21:23,198 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:21:24,674 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:21:26,529 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:21:37,213 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:21:37,213 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索与AI Agent开发相关的岗位，并根据用户要求与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:21:37,214 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:21:40,389 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:21:40,390 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:21:44,368 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:22:22,614 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 15:26:13,064 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:26:14,541 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:26:16,383 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:26:26,480 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:26:26,480 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索AI Agent开发相关的工作岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:26:26,481 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:26:30,314 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:26:30,315 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:26:38,145 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:33:21,991 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 15:33:35,464 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:33:36,895 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:33:38,802 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:33:50,222 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:33:50,223 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据搜索结果与HR进行初步沟通。",
+      "note": "此步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:33:50,224 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:33:53,139 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:33:53,139 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:33:56,260 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:33:59,307 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 15:36:10,976 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:36:12,434 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:36:15,736 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:36:29,611 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:36:29,612 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent开发相关的职位，筛选合适的岗位。",
+      "note": "确保岗位符合AI Agent开发的要求。"
+    },
+    {
+      "agent_name": "job_find",
+      "title": "与HR沟通",
+      "description": "通过BOSS直聘平台与相关岗位的HR进行沟通，了解职位详情和申请流程。",
+      "note": "沟通内容需专业且简洁。"
+    }
+  ]
+}
+2025-04-30 15:36:29,612 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:36:32,680 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:36:32,680 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:36:36,085 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:40:48,056 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'FrameLocalsProxy' object has no attribute 'pop'...
+2025-04-30 15:40:48,057 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 15:41:23,315 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:41:24,834 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:41:27,249 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:41:38,623 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:41:38,624 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据用户要求与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:41:38,624 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:41:41,930 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:41:41,930 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:41:55,515 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:46:45,264 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:46:46,771 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:46:49,152 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:47:00,174 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:47:00,175 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据搜索结果与HR进行初步沟通。",
+      "note": "此步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:47:00,176 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:47:03,231 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:47:03,231 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:47:28,430 - app.multi_agents.graph.node_graph - ERROR - [job_find] 岗位查找失败: 模板应用失败：'FrameLocalsProxy' object has no attribute 'pop'
+2025-04-30 15:48:17,164 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:48:18,666 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:48:23,139 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:48:33,747 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:48:33,748 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "根据用户需求，在BOSS直聘平台上搜索与AI Agent开发相关的职位，并与HR进行初步沟通。",
+      "note": "此步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:48:33,748 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:48:36,984 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:48:36,984 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:50:51,726 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:50:53,154 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:50:55,219 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:51:06,705 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:51:06,706 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "根据用户需求，在BOSS直聘平台上搜索AI Agent开发相关的工作岗位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:51:06,706 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:51:09,802 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:51:09,803 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 15:51:15,734 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 15:58:48,367 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 15:58:49,825 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 15:58:51,966 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 15:59:02,794 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 15:59:02,794 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent开发相关的职位，筛选合适的岗位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 15:59:02,795 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 15:59:05,939 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 15:59:05,940 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:00:02,640 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 16:03:43,953 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'FrameLocalsProxy' object has no attribute 'pop'...
+2025-04-30 16:03:43,953 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 16:04:48,778 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:04:50,210 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:04:52,255 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 16:05:03,053 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 16:05:03,054 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索与AI Agent开发相关的岗位，筛选合适的职位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 16:05:03,054 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 16:05:07,030 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 16:05:07,031 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:05:30,231 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 16:09:12,644 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'FrameLocalsProxy' object has no attribute 'pop'...
+2025-04-30 16:09:12,644 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 16:15:19,165 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:15:20,610 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:15:23,516 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 16:15:35,822 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 16:15:35,823 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索符合要求的AI Agent开发岗位，并与相关HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 16:15:35,823 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 16:15:38,786 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 16:15:38,787 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:15:47,134 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 16:18:49,176 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'FrameLocalsProxy' object has no attribute 'pop'...
+2025-04-30 16:18:49,177 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 16:19:10,405 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:19:11,867 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:19:13,836 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 16:19:24,858 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 16:19:24,858 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "使用job_find代理在BOSS直聘平台上搜索与AI Agent开发相关的职位，并根据用户需求筛选合适的岗位。",
+      "note": "该步骤完成后，任务将结束。"
+    }
+  ]
+}
+2025-04-30 16:19:24,859 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 16:19:29,460 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 16:19:29,461 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:19:29,463 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 16:31:25,793 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:31:27,212 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:31:29,324 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 16:31:40,417 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 16:31:40,418 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户要求在BOSS直聘上寻找AI Agent开发相关的工作岗位，并与HR进行沟通。",
+  "title": "寻找AI Agent开发工作并与HR沟通",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent开发岗位",
+      "description": "根据用户需求，在BOSS直聘平台上搜索AI Agent开发相关的工作岗位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 16:31:40,418 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 16:31:43,378 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 16:31:43,378 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:31:43,380 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 16:34:40,330 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:34:41,775 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:34:47,032 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 16:34:57,055 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 16:34:57,056 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关工作岗位",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 16:34:57,056 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 16:35:00,878 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 16:35:00,878 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:35:00,880 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 16:37:25,176 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:37:26,582 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:37:36,318 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 16:37:46,882 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 16:37:46,882 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 16:37:46,882 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 16:37:49,854 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 16:37:49,854 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:37:49,856 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 16:41:24,330 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 16:41:24,331 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 16:42:37,236 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:42:38,686 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:43:30,719 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:43:31,207 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:43:35,646 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 16:43:44,883 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 16:43:44,883 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 16:43:44,883 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 16:43:46,029 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 16:43:46,030 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:43:46,031 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 16:47:54,675 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:47:55,138 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:47:58,885 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 16:48:13,527 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 16:48:13,528 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent工作的相关信息，包括岗位需求、职责等。",
+  "title": "研究AI Agent工作相关信息",
+  "steps": [
+    {
+      "agent_name": "browser",
+      "title": "搜索AI Agent相关岗位信息",
+      "description": "使用浏览器搜索AI Agent相关的岗位信息，包括岗位职责、技能要求等。",
+      "note": "确保搜索范围包括主流招聘网站和技术论坛。"
+    },
+    {
+      "agent_name": "reporter",
+      "title": "整理AI Agent岗位报告",
+      "description": "根据浏览器搜索的结果，整理一份关于AI Agent岗位的详细报告，包括岗位需求、技能要求等。",
+      "note": "报告需简洁明了，突出重点信息。"
+    },
+    {
+      "agent_name": "job_find",
+      "title": "寻找AI Agent相关岗位",
+      "description": "根据用户提供的岗位要求，在boss直聘上寻找相关岗位，并与HR进行沟通。",
+      "note": "此步骤为最终步骤，无需后续计划。"
+    }
+  ]
+}
+2025-04-30 16:48:13,528 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 16:48:15,072 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 16:48:15,072 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:48:15,074 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 16:58:32,530 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 16:58:33,005 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 16:58:37,617 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 16:58:46,157 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 16:58:46,158 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 16:58:46,158 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 16:58:47,437 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 16:58:47,437 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 16:58:47,439 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:02:58,042 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:02:58,519 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:03:02,365 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:03:11,315 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:03:11,316 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:03:11,316 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:03:12,566 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:03:12,566 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:03:12,568 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:09:52,726 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:09:53,228 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:09:56,290 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:10:05,471 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:10:05,471 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户想要了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:10:05,471 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:10:06,883 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:10:06,884 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:10:06,885 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:11:22,816 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 17:11:22,816 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 17:11:40,032 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:11:40,580 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:11:43,317 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:11:52,281 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:11:52,281 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:11:52,282 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:11:53,624 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:11:53,625 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:11:53,626 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:15:08,849 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:15:09,359 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:15:12,095 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> __end__ | 不满足跳转条件
+2025-04-30 17:15:21,865 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:15:21,866 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户想要了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "根据用户需求，在BOSS直聘上搜索与AI Agent相关的岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:15:21,866 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:15:23,161 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:15:23,162 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:15:23,163 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:21:41,400 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:21:41,894 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:21:45,098 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:21:53,870 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:21:53,871 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户想要了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:21:53,871 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:21:55,260 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:21:55,260 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:21:55,262 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:25:10,781 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:25:11,273 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:25:14,224 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:25:24,402 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:25:24,402 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关工作岗位",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "根据用户需求，在BOSS直聘上搜索与AI Agent相关的岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:25:24,403 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:25:25,903 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:25:25,903 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:25:25,905 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:32:40,293 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:32:40,834 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:32:44,707 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:32:54,218 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:32:54,218 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关工作岗位",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行初步沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:32:54,219 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:32:55,535 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:32:55,536 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:32:55,538 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:34:40,587 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 17:34:40,588 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 17:35:15,399 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:35:15,899 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:35:18,168 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:35:27,585 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:35:27,586 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "搜索AI Agent相关岗位",
+      "description": "在BOSS直聘上搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:35:27,586 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:35:28,838 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:35:28,838 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:35:28,840 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:36:21,270 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:36:21,770 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:36:22,973 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:36:37,695 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:36:37,695 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent工作的相关信息，包括岗位要求和招聘情况。",
+  "title": "研究AI Agent工作相关信息",
+  "steps": [
+    {
+      "agent_name": "researcher",
+      "title": "收集AI Agent工作相关信息",
+      "description": "使用搜索引擎和爬虫技术从互联网上收集关于AI Agent工作的相关信息，包括岗位职责、技能要求、行业趋势等。",
+      "note": "输出Markdown报告，概述调查结果。"
+    },
+    {
+      "agent_name": "job_find",
+      "title": "寻找AI Agent相关岗位",
+      "description": "根据收集到的信息，在boss直聘上寻找AI Agent相关岗位，并与HR进行沟通。",
+      "note": "该步骤的下一步必须为结束。"
+    },
+    {
+      "agent_name": "reporter",
+      "title": "撰写专业报告",
+      "description": "根据前两个步骤的结果，撰写一份关于AI Agent工作的专业报告，包括岗位要求、招聘情况和行业趋势。"
+    }
+  ]
+}
+2025-04-30 17:36:37,695 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:36:38,702 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:36:38,703 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:36:54,397 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:36:54,874 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:36:56,287 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:37:05,273 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:37:05,273 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望了解AI Agent相关的工作机会。",
+  "title": "寻找AI Agent相关的工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "根据用户需求，在BOSS直聘上搜索与AI Agent相关的岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:37:05,274 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:37:06,381 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:37:06,381 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:38:09,071 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:38:09,546 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:38:10,570 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> __end__ | 不满足跳转条件
+2025-04-30 17:38:19,375 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:38:19,376 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:38:19,376 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:38:20,727 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:38:20,728 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:38:20,730 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:38:26,892 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 17:38:26,892 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 17:39:23,231 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:39:23,712 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:39:24,804 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> __end__ | 不满足跳转条件
+2025-04-30 17:39:33,862 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:39:33,862 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "根据用户需求，在BOSS直聘上搜索AI Agent相关岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:39:33,863 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:39:34,861 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:39:34,862 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:39:34,864 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:39:41,134 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 17:39:41,134 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 17:44:15,002 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:44:15,485 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:44:28,758 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:44:37,811 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:44:37,812 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "根据用户需求，在BOSS直聘上搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:44:37,812 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:44:46,660 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:44:46,661 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:44:46,662 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:44:52,811 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 17:44:52,811 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 17:46:36,332 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:46:36,786 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:47:03,298 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:47:13,366 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:47:13,367 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:47:13,367 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:47:19,408 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:47:19,409 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:47:19,411 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:47:25,571 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 17:47:25,571 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 17:48:48,938 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 17:48:49,408 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 17:48:50,516 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 17:48:59,239 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 17:48:59,239 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找与AI Agent相关的工作岗位。",
+  "title": "寻找AI Agent相关工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 17:48:59,240 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 17:49:00,620 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 17:49:00,620 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 17:49:00,622 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 17:51:37,245 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 17:51:37,246 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> __end__ | 岗位查找完成
+2025-04-30 18:46:31,799 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 18:46:32,256 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 18:46:33,496 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 18:46:43,498 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 18:46:43,499 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 18:46:43,499 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 18:46:44,661 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 18:46:44,662 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 18:46:44,664 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 18:46:49,479 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'AgentHistoryList' object has no attribute 'all_results'...
+2025-04-30 18:46:49,479 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> supervisor | 岗位查找完成
+2025-04-30 18:47:23,180 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 18:47:23,638 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 18:47:24,976 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 18:47:34,317 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 18:47:34,317 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 18:47:34,318 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 18:47:35,873 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 18:47:35,873 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 18:47:35,877 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 18:48:41,664 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 18:48:41,664 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> supervisor | 岗位查找完成
+2025-04-30 18:49:47,089 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 18:49:47,586 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 18:49:48,674 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 18:49:57,592 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 18:49:57,592 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent相关工作岗位",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用BOSS直聘平台搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 18:49:57,593 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 18:50:39,979 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 18:50:39,980 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 18:50:48,293 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 18:52:30,793 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'FrameLocalsProxy' object has no attribute 'pop'...
+2025-04-30 18:52:30,794 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> supervisor | 岗位查找完成
+2025-04-30 18:53:57,231 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 18:53:57,716 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 18:53:58,802 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 18:54:07,458 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 18:54:07,459 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "根据用户需求，在BOSS直聘上搜索AI Agent相关岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 18:54:07,459 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 18:54:08,671 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 18:54:08,671 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 18:54:08,672 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 19:01:13,569 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 19:01:13,569 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> supervisor | 岗位查找完成
+2025-04-30 19:01:15,164 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 19:01:15,164 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 19:01:15,166 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 19:09:06,353 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 19:09:06,353 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> supervisor | 岗位查找完成
+2025-04-30 19:09:07,615 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 19:09:07,616 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 19:09:07,618 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 19:09:12,464 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'AgentHistoryList' object has no attribute 'all_results'...
+2025-04-30 19:09:12,464 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> supervisor | 岗位查找完成
+2025-04-30 19:09:13,761 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 19:09:13,761 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 19:09:13,763 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 19:09:41,631 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 19:09:42,151 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 19:09:43,134 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 19:09:51,784 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 19:09:51,784 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "根据用户需求，在BOSS直聘上搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 19:09:51,784 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 19:09:53,020 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 19:09:53,020 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 19:09:53,022 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 19:13:50,336 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 19:13:50,792 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 19:13:51,850 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 19:14:01,492 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 19:14:01,492 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索AI Agent相关岗位，并与HR进行沟通。",
+      "note": "该步骤必须为最后一步"
+    }
+  ]
+}
+2025-04-30 19:14:01,493 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 19:14:02,780 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 19:14:02,780 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 19:14:02,782 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 19:23:07,964 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 19:23:08,426 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 19:23:09,673 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 19:23:19,788 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 19:23:19,788 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "根据用户需求，在BOSS直聘上搜索AI Agent相关岗位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 19:23:19,788 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 19:23:21,027 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 19:23:21,027 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 19:23:21,029 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 19:25:37,409 - app.multi_agents.graph.node_graph - INFO - [system] 智能体图构建完成
+2025-04-30 19:25:37,931 - app.multi_agents.graph.node_graph - DEBUG - [frontdesk] 前台智能体开始工作
+2025-04-30 19:25:39,125 - app.multi_agents.graph.node_graph - INFO - Agent Transition: frontdesk -> planner | 满足跳转条件，包含handoff_to_planner()
+2025-04-30 19:25:48,247 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体完成工作
+2025-04-30 19:25:48,247 - app.multi_agents.graph.node_graph - DEBUG - [planner] 规划智能体结果: {
+  "thought": "用户希望寻找AI Agent相关的工作。",
+  "title": "寻找AI Agent工作",
+  "steps": [
+    {
+      "agent_name": "job_find",
+      "title": "在BOSS直聘上搜索AI Agent相关岗位",
+      "description": "使用job_find代理在BOSS直聘上搜索与AI Agent相关的职位，并与HR进行沟通。",
+      "note": "该步骤完成后，任务结束。"
+    }
+  ]
+}
+2025-04-30 19:25:48,248 - app.multi_agents.graph.node_graph - INFO - Agent Transition: planner -> supervisor | 规划完成，转到监督智能体
+2025-04-30 19:25:49,385 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 19:25:49,386 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 19:25:49,387 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
+2025-04-30 19:32:20,728 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具完成: 执行Boss直聘任务时出错: 'dict' object has no attribute 'split'...
+2025-04-30 19:32:20,729 - app.multi_agents.graph.node_graph - INFO - Agent Transition: job_find -> supervisor | 岗位查找完成
+2025-04-30 19:32:21,862 - app.multi_agents.graph.node_graph - DEBUG - [supervisor] 监督智能体开始工作
+2025-04-30 19:32:21,863 - app.multi_agents.graph.node_graph - INFO - Agent Transition: supervisor -> executor | 监督任务设置完成，转到执行智能体
+2025-04-30 19:32:21,865 - app.multi_agents.graph.node_graph - DEBUG - [job_find] 调用Boss直聘工具开始
