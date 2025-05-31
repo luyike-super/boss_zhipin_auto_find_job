@@ -6,15 +6,34 @@ LangChain中的自定义处理逻辑示例
 """
 
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import StrOutputParser
+from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_openai import ChatOpenAI
 from langchain_core.runnables import RunnableLambda
 from datetime import datetime
 import json
 from dotenv import load_dotenv
+import functools
+import traceback
 
 # 加载环境变量（包含API密钥）
 load_dotenv()
+
+# 添加一个全局变量用于存储extract_keywords的结果
+_extract_keywords_result = {}
+
+# 添加一个错误处理装饰器
+def safe_execution(func):
+    """装饰器：捕获并打印函数执行过程中的错误"""
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            print(f"错误发生在 {func.__name__}: {str(e)}")
+            print(f"错误详情: {traceback.format_exc()}")
+            # 返回一个默认值，避免程序崩溃
+            return {"error": str(e)}
+    return wrapper
 
 def demo_basic_usage():
     """
@@ -235,16 +254,22 @@ def demo_multi_stage():
     """
     print("\n=== 多阶段处理链示例 ===")
     
-    model = ChatOpenAI()
+    # 使用较高温度设置，以增加创造性
+    model = ChatOpenAI(temperature=0.7)
     output_parser = StrOutputParser()
     
+    @safe_execution
     def extract_keywords(text):
         """从文本中提取关键词(模拟)"""
         # 此处简化处理，实际应用中可能使用NLP库
         words = text.split()
         # 模拟提取关键词
         keywords = [word for word in words if len(word) > 3][:5]
-        return {"original_text": text, "keywords": keywords}
+        print(f"提取的关键词: {keywords}")
+        # 存储结果到全局变量
+        global _extract_keywords_result
+        _extract_keywords_result = {"original_text": text, "keywords": keywords}
+        return _extract_keywords_result
     
     # 第二步：增强关键词
     keyword_prompt = ChatPromptTemplate.from_template(
@@ -253,16 +278,14 @@ def demo_multi_stage():
         从上述文本中提取的关键词有：{keywords}
         
         请扩展这些关键词，为每个关键词提供相关的术语或同义词。
-        以JSON格式返回，关键词作为键，相关术语列表作为值。"""
+        
+        严格按照以下JSON格式返回，不要添加任何其他解释:
+        {{
+          "关键词1": ["相关术语1", "相关术语2", ...],
+          "关键词2": ["相关术语1", "相关术语2", ...],
+          ...
+        }}"""
     )
-    
-    def parse_enhanced_keywords(text):
-        """解析模型返回的增强关键词JSON"""
-        try:
-            data = json.loads(text)
-            return {"keyword_expansion": data}
-        except json.JSONDecodeError:
-            return {"keyword_expansion": {}, "parsing_error": text}
     
     # 第四步：生成最终内容
     final_prompt = ChatPromptTemplate.from_template(
@@ -279,8 +302,8 @@ def demo_multi_stage():
         RunnableLambda(extract_keywords)
         | keyword_prompt
         | model
-        | output_parser
-        | RunnableLambda(parse_enhanced_keywords)
+        | JsonOutputParser()  # 使用LCEL内置的JSON解析器
+        | RunnableLambda(lambda json_data: {"keyword_expansion": json_data, "original_text": _extract_keywords_result["original_text"]})
         | final_prompt
         | model
         | output_parser
@@ -297,12 +320,8 @@ def main():
     print("开始运行LangChain自定义处理逻辑示例...")
     
     # 运行各个示例
-    demo_basic_usage()
-    # demo_json_processing()
-    # demo_external_api()
-    # demo_conditional_logic()
-    # demo_logging()
-    # demo_multi_stage()
+
+    demo_multi_stage()
     
     print("\n所有示例运行完成！")
 
